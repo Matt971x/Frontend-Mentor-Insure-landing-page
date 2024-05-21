@@ -1,0 +1,255 @@
+/* heading font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+
+/* body font */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+:root{
+--Dark_Violet: hsl(256, 26%, 20%);
+--Grayish_Blue: hsl(216, 30%, 68%);
+--Very_Dark_Violet: hsl(270, 9%, 17%);
+--Dark_Grayish_Violet: hsl(273, 4%, 51%);
+--Very_Light_Gray: hsl(0, 0%, 98%);
+}
+
+/* GENERAL SETTING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+
+}
+
+.btn {
+    width: 145px;
+    height: 40px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: .7;
+}
+
+.btn:hover{
+    cursor: pointer;
+}
+
+.black {
+    color: black;
+    border: 2px solid black;
+    background: transparent;
+}
+
+.white{
+    color: var(--Very_Light_Gray);
+    border: 2px solid var(--Very_Light_Gray);
+    background: transparent;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/* NAV */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+}
+
+.nav-links {
+    display: none;
+}
+
+.menu-burger:hover{
+    cursor: pointer;
+}
+
+/* HEADER */
+
+.introduction-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.introduction-flex {
+    position: relative;
+    background-color: var(--Dark_Violet);
+    background-image: url('./images/bg-pattern-intro-left-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top left;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    color: var(--Very_Light_Gray);
+    padding: 100px 30px;
+}
+
+.introduction-img-right{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: translateY(55%);
+    z-index: 2;
+}
+
+.introduction-flex h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 2.8rem;
+    font-weight: lighter;
+    line-height: 1;
+}
+.introduction-text {
+    line-height: 1.6;
+    font-weight: 200;
+}
+
+.img-introduction {
+    background: url("./images/image-intro-mobile.jpg");
+    height: 450px;
+    width: 100%;
+}
+
+/* SECTION INSURANCE */
+.insurance-plan {
+    padding:0 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.insurance-plan hr {
+    width: 150px;
+    height: 1px;
+    margin: 140px auto 35px;
+} 
+
+.plan-title {
+    color: var(--Dark_Violet);
+    font-family: "DM Serif Display", serif;
+    font-size: 2.9rem;
+    font-weight: 200;
+}
+
+.plan-card-flex {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.plan-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 25px;
+}
+.plan-card img {
+    margin-bottom: 10px;
+}
+
+.plan-title-step {
+    font-family: "DM Serif Display", serif;
+    font-size: 1.7rem;
+    font-weight: 300;
+}
+
+.plan-card p {
+    color: var(--Dark_Grayish_Violet);
+    line-height: 1.5;
+}
+
+.about-us {
+    background-image:url('./images/bg-pattern-how-we-work-mobile.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-top: 135px;
+    padding: 65px 0 ;
+    height: 340px;
+    background-color: var(--Dark_Violet);
+    color: var(--Very_Light_Gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 2.5rem;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.social-media {
+text-align: center;
+}
+
+.social-media ul {
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media li:hover {
+    cursor: pointer;
+}
+
+footer hr {
+    background: var(--Very_Light_Gray);
+    border-top: 1px solid var(--Very_Light_Gray);
+    width: 90%;
+    margin: 0 auto 45px;
+
+}
+
+footer {
+    padding-top: 230px;
+    padding-bottom: 100px;
+    background: var(--Very_Light_Gray);
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    gap: 40px;
+}
+
+.links-card{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+
+.links-title {
+    font-size: 0.8rem;
+    color: var(--Dark_Grayish_Violet);
+}
+
+.footer-links ul {
+    gap:15px;
+}
+
+.footer-links li {
+    font-size: .85rem;
+    font-weight: 600;
+}
+

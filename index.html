@@ -9,12 +9,15 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <title>Frontend Mentor | Insure landing page</title>
+    <title>Insure Landing Page</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <nav>
-      <img src="./images/logo.svg" alt="Logo" />
+      <img class="logo" src="./images/logo.svg" alt="Logo" />
+      <div class="menu-burger">
+         <img src="./images/icon-hamburger.svg" alt="icon Menu">
+      </div>
       <ul class="nav-links">
         <li>
           <a href="#">How we work</a>
@@ -32,8 +35,9 @@
     </nav>
 
     <header>
-      <div class="introduction">
+      <div class="introduction-wrapper">
         <div class="introduction-flex">
+          <img class="introduction-img-right" src="./images/bg-pattern-intro-right-mobile.svg" alt="">
           <h1 class="introduction-title">Humanizing your insurance.</h1>
           <p class="introduction-text">
             Get your life insurance coverage easier and faster. We blend our
@@ -42,11 +46,13 @@
           </p>
           <button class="btn white">View plans</button>
         </div>
+        <div class="img-introduction"></div>
       </div>
     </header>
 
     <section class="insurance-plan">
       <div class="plan-wrapper">
+        <hr>
         <h2 class="plan-title">We’re different</h2>
         <div class="plan-card-flex">
           <div class="plan-card">
@@ -65,7 +71,7 @@
               src="./images/icon-affordable-prices.svg"
               alt="Icon affordable prices"
             />
-            <h3>Affordable Prices</h3>
+            <h3 class="plan-title-step">Affordable Prices</h3>
             <p>
               We don’t want you worrying about high monthly costs. Our prices
               may be low, but we still offer the best coverage possible.
@@ -73,7 +79,7 @@
           </div>
           <div class="plan-card">
             <img src="./images/icon-people-first.svg" alt="Icon people first" />
-            <h3>People First</h3>
+            <h3 class="plan-title-step">People First</h3>
             <p>
               Our plans aren’t full of conditions and clauses to prevent
               payouts. We make sure you’re covered when you need it.
@@ -108,7 +114,7 @@
           <ul class="footer-links">
             <li><a href="#">How we work</a></li>
             <li><a href="#">Why Insure?</a></li>
-            <li><a href="#">View plans</a></li>
+            <li><a href="#">Check price</a></li>
             <li><a href="#">Reviews</a></li>
           </ul>
         </div>
@@ -139,6 +145,5 @@
         </div>
       </div>
     </footer>
-
   </body>
 </html>
