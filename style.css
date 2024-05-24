@@ -137,6 +137,7 @@ nav {
 .plan-title {
     color: var(--Dark_Violet);
     font-family: "DM Serif Display", serif;
+    text-align: center;
     font-size: 2.9rem;
     font-weight: 200;
 }
@@ -252,4 +253,142 @@ footer {
     font-size: .85rem;
     font-weight: 600;
 }
+
+/* Destop part */
+
+
+@media screen and (min-width:900px){
+    nav,.introduction-wrapper,.insurance-plan,.about-us {
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+    nav {
+
+        padding: 22px 5px;
+    }
+    .menu-burger{
+        display: none;
+
+    }
+    .nav-links {
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        gap: 25px;
+    }
+
+    .nav-links li a {
+        font-size: .85rem;
+        color: var(--Dark_Grayish_Violet);
+        letter-spacing: 2px;
+    }
+    
+    header{
+        height: 600px;
+        background: var(--Dark_Violet);
+    }
+    .introduction-wrapper{
+     flex-direction: row;
+     padding-top: 100px;
+    }
+   .introduction-flex {
+    background: none;
+
+   }
+   .introduction-flex::before {
+    content:'';
+    width: 150px;
+    background: var(--Very_Light_Gray);
+    height: 1px;
+    margin-bottom: 60px;
+   }
+   .introduction-img-right{
+    display: none;
+   }
+
+   .introduction-flex {
+    text-align: left;
+    align-items: start;
+    justify-content: flex-start;
+    padding: 0;
+   }
+   .introduction-flex h1 {
+    width: 90%;
+    font-size: 4.4rem;
+    margin-bottom: 20px;
+   }
+   .img-introduction {
+    background: url('./images/image-intro-desktop.jpg');
+    height: 650px;
+   }
+   .introduction-flex button {
+    margin-top: 30px;
+   }
+   /* Insurance plan  */
+   .insurance-plan hr {
+    margin: 300px 0 50px;
+   }
+   .insurance-plan{
+    padding: 0;
+   }
+   .plan-title {
+    font-size: 4.4rem;
+    text-align: left;
+
+
+   }
+   .plan-card-flex {
+    flex-direction: row;
+   }
+   .plan-card{
+    align-items: start;
+    text-align: left;
+   }
+
+   .about-us {
+    height: 250px;
+    margin-top: 160px;
+    flex-direction: row;
+    padding:0 80px;
+    }
+
+    .about-us h2 {
+        font-size: 3.5rem;
+        text-align: left;
+        width: 55%;
+        letter-spacing: 1px;
+    }
+
+    /* Footer */
+    footer {
+        padding-top: 182px;
+    }
+
+    .social-media {
+        width: 1110px;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-links {
+        margin: 0 auto;
+        max-width: 1110px;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: start;
+        text-align: left;
+    }
+    .links-card {
+        flex-direction: column;
+    }
+    .links-card ul {
+        flex-direction: column;
+    }
+    
+
+
+}
+
 
